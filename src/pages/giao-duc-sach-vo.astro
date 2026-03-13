@@ -1,0 +1,113 @@
+---
+import DealaTopic from '../layouts/DealaTopic.astro';
+
+const page = {
+	title: 'Giao duc / Sach vo',
+	description: 'Voucher khoa hoc, giao duc, sach va do dung hoc tap.',
+	heroEyebrow: 'Giao duc',
+	heroTitle: 'San coupon giao duc va sach vo.',
+	heroLead:
+		'Giam gia khoa hoc online, ngoai ngu, sach va do dung hoc tap cho hoc sinh sinh vien.',
+	searchPlaceholder: 'Nhap khoa hoc, nha sach, ma giam gia',
+	stats: [
+		{ value: '1.1K', label: 'Ma giam gia' },
+		{ value: '210', label: 'Doi tac' },
+		{ value: '95%', label: 'Ti le thanh cong' }
+	],
+	heroCards: [
+		{
+			brand: 'UDEMY',
+			title: 'Giam 80% khoa hoc online',
+			meta: 'Gioi han 48h',
+			tag: 'NEW',
+			code: 'UD80'
+		},
+		{
+			brand: 'FAHASA',
+			title: 'Giam 25% sach giao khoa',
+			meta: 'Don tu 199K',
+			tag: 'HOT',
+			code: 'FHS25',
+			highlight: true
+		},
+		{
+			mini: true,
+			title: 'Sach van hoc',
+			meta: 'Giam 20%',
+			tag: 'Cuoi tuan'
+		}
+	],
+	categories: [
+		{ name: 'Khoa hoc online', summary: 'Khoa hoc ky nang', count: '420 uu dai' },
+		{ name: 'Ngoai ngu', summary: 'Tieng Anh, Nhat, Han', count: '210 uu dai' },
+		{ name: 'Sach', summary: 'Sach ky nang, van hoc', count: '260 uu dai' },
+		{ name: 'Do dung hoc tap', summary: 'But, vo, do dung', count: '140 uu dai' }
+	],
+	deals: [
+		{
+			provider: 'Udemy',
+			category: 'Khoa hoc online',
+			title: 'Giam 80% khoa hoc ky nang',
+			description: 'Gioi han 48h, ap dung khoa hoc moi.',
+			tag: 'Hot',
+			meta: 'Con 2 ngay',
+			code: 'UD80'
+		},
+		{
+			provider: 'Kyna',
+			category: 'Khoa hoc online',
+			title: 'Giam 60% khoa hoc giao duc',
+			description: 'Ap dung cho khoa hoc noi bat thang nay.',
+			tag: 'New',
+			meta: 'So luong gioi han',
+			code: 'KY60'
+		},
+		{
+			provider: 'Coursera',
+			category: 'Ngoai ngu',
+			title: 'Giam 30% goi chuyen sau',
+			description: 'Ap dung tai khoan moi, thanh toan the.',
+			tag: 'Pho bien',
+			meta: 'Online',
+			code: 'CR30'
+		},
+		{
+			provider: 'Fahasa',
+			category: 'Sach',
+			title: 'Giam 25% sach giao khoa',
+			description: 'Ap dung don tu 199K, free giao hang.',
+			tag: 'Hot',
+			meta: 'Con 5 ngay',
+			code: 'FHS25'
+		},
+		{
+			provider: 'Tiki Books',
+			category: 'Sach',
+			title: 'Giam 20% sach moi ve',
+			description: 'Ap dung cho sach van hoc va ky nang.',
+			tag: 'New',
+			meta: 'Ap dung online',
+			code: 'TK20'
+		},
+		{
+			provider: 'Vinabook',
+			category: 'Sach',
+			title: 'Giam 15% sach tieng Anh',
+			description: 'Uu dai cho don tu 299K.',
+			tag: 'Pho bien',
+			meta: 'Con 7 ngay',
+			code: 'VNB15'
+		}
+	],
+	stores: ['Udemy', 'Kyna', 'Coursera', 'Fahasa', 'Tiki Books', 'Vinabook', 'Nha sach tre'],
+	steps: [
+		{ title: 'Chon chu de hoc', description: 'Loc theo khoa hoc online, sach hoac ngoai ngu.' },
+		{ title: 'Lay ma giam gia', description: 'Sao chep ma giam gia nhanh chong.' },
+		{ title: 'Ap dung khi thanh toan', description: 'Nhap ma de nhan giam gia ngay.' }
+	],
+	newsletterTitle: 'Nhan thong tin khuyen mai giao duc',
+	newsletterLead: 'Cap nhat uu dai khoa hoc, sach va do dung hoc tap moi.'
+};
+---
+
+<DealaTopic {...page} />

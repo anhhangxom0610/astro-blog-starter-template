@@ -1,0 +1,122 @@
+---
+import DealaTopic from '../layouts/DealaTopic.astro';
+
+const page = {
+	title: 'An uong / Cafe',
+	description: 'Tong hop ma giam gia an uong, cafe, tra sua va giao do an.',
+	heroEyebrow: 'An uong',
+	heroTitle: 'San ma giam gia an uong va cafe.',
+	heroLead:
+		'Uu dai nha hang, cafe, tra sua va giao do an cap nhat lien tuc theo ngay.',
+	searchPlaceholder: 'Nhap nha hang, quan cafe, ma giam gia',
+	stats: [
+		{ value: '1.6K', label: 'Ma giam gia' },
+		{ value: '420', label: 'Cua hang' },
+		{ value: '95%', label: 'Ti le thanh cong' }
+	],
+	heroCards: [
+		{
+			brand: 'HIGHLANDS',
+			title: 'Giam 30% do uong size L',
+			meta: 'Ap dung 14h-17h',
+			tag: 'NEW',
+			code: 'HIGHL30'
+		},
+		{
+			brand: 'PHUC LONG',
+			title: 'Giam 25% tra sua size L',
+			meta: 'Dat qua app',
+			tag: 'HOT',
+			code: 'PL25',
+			highlight: true
+		},
+		{
+			mini: true,
+			title: 'Combo bua trua',
+			meta: 'Giam 25%',
+			tag: 'Chi hom nay'
+		}
+	],
+	categories: [
+		{ name: 'Nha hang', summary: 'Uu dai set menu', count: '420 uu dai' },
+		{ name: 'Cafe / Tra sua', summary: 'Do uong giam gia', count: '360 uu dai' },
+		{ name: 'Fast food', summary: 'Combo tiet kiem', count: '280 uu dai' },
+		{ name: 'Giao do an', summary: 'Voucher giao hang', count: '540 uu dai' }
+	],
+	deals: [
+		{
+			provider: 'Highlands Coffee',
+			category: 'Cafe',
+			title: 'Giam 30% do uong size L',
+			description: 'Ap dung 14h-17h cho don tu 59K.',
+			tag: 'Hot',
+			meta: 'Con 3 ngay',
+			code: 'HIGHL30'
+		},
+		{
+			provider: 'The Coffee House',
+			category: 'Cafe',
+			title: 'Mua 1 tang 1 banh ngot',
+			description: 'Ap dung tai cua hang cho don tu 99K.',
+			tag: 'New',
+			meta: 'Chi thu 4',
+			code: 'TCH11'
+		},
+		{
+			provider: 'Phuc Long',
+			category: 'Tra sua',
+			title: 'Giam 25% tra sua size L',
+			description: 'Dat qua app, gioi han 2 ly/lan.',
+			tag: 'Hot',
+			meta: 'Online',
+			code: 'PL25'
+		},
+		{
+			provider: 'KFC',
+			category: 'Fast food',
+			title: 'Combo ga ran giam 40K',
+			description: 'Mua 2 combo tro len, ap dung toan quoc.',
+			tag: 'New',
+			meta: 'Den 30/04/2026',
+			code: 'KFC40'
+		},
+		{
+			provider: 'Pizza Hut',
+			category: 'Pizza',
+			title: 'Giam 35% pizza size M',
+			description: 'Dat hang online tu 2 banh.',
+			tag: 'Hot',
+			meta: 'Con 2 ngay',
+			code: 'PZ35'
+		},
+		{
+			provider: 'GrabFood',
+			category: 'Giao do an',
+			title: 'Giam 30% don tu 150K',
+			description: 'Gioi han 3 lan/nguoi, ap dung 11h-13h.',
+			tag: 'Pho bien',
+			meta: 'Trua moi ngay',
+			code: 'GF30'
+		}
+	],
+	stores: [
+		'Highlands Coffee',
+		'The Coffee House',
+		'Phuc Long',
+		'KFC',
+		'Pizza Hut',
+		'Lotteria',
+		'GrabFood',
+		'ShopeeFood'
+	],
+	steps: [
+		{ title: 'Chon danh muc', description: 'Loc theo nha hang, cafe, fast food hoac giao do an.' },
+		{ title: 'Lay ma giam gia', description: 'Bam vao ma de sao chep nhanh va su dung ngay.' },
+		{ title: 'Ap dung khi thanh toan', description: 'Nhap ma tai cua hang hoac tren app dat hang.' }
+	],
+	newsletterTitle: 'Nhan thong tin khuyen mai an uong',
+	newsletterLead: 'Cap nhat voucher moi tu nha hang, cafe va dich vu giao do an.'
+};
+---
+
+<DealaTopic {...page} />

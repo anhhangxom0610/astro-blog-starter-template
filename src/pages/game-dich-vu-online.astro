@@ -1,0 +1,121 @@
+---
+import DealaTopic from '../layouts/DealaTopic.astro';
+
+const page = {
+	title: 'Game / Dich vu online',
+	description: 'Coupon nap game, goi subscription va dich vu online.',
+	heroEyebrow: 'Game',
+	heroTitle: 'San deal game va dich vu online.',
+	heroLead:
+		'Voucher nap game, subscription va dich vu so cho hoc tap, giai tri va lam viec.',
+	searchPlaceholder: 'Nhap game, dich vu online, ma giam gia',
+	stats: [
+		{ value: '1.3K', label: 'Ma giam gia' },
+		{ value: '240', label: 'Doi tac' },
+		{ value: '94%', label: 'Ti le thanh cong' }
+	],
+	heroCards: [
+		{
+			brand: 'STEAM',
+			title: 'Giam 10% the nap Steam',
+			meta: 'Ap dung cho the 20 USD',
+			tag: 'NEW',
+			code: 'STEAM10'
+		},
+		{
+			brand: 'GAME PASS',
+			title: 'Giam 40% goi 3 thang',
+			meta: 'Tai khoan moi',
+			tag: 'HOT',
+			code: 'PASS40',
+			highlight: true
+		},
+		{
+			mini: true,
+			title: 'Nap game',
+			meta: 'Giam 15%',
+			tag: 'Chi hom nay'
+		}
+	],
+	categories: [
+		{ name: 'Nap game', summary: 'The nap va gift card', count: '420 uu dai' },
+		{ name: 'Subscription', summary: 'Goi thue bao game', count: '260 uu dai' },
+		{ name: 'Nen tang so', summary: 'Goi ung dung online', count: '320 uu dai' },
+		{ name: 'Dich vu cloud', summary: 'Luu tru va cong cu', count: '180 uu dai' }
+	],
+	deals: [
+		{
+			provider: 'Steam Wallet',
+			category: 'Nap game',
+			title: 'Giam 10% the nap 20 USD',
+			description: 'Gioi han 2 the/nguoi, ap dung online.',
+			tag: 'New',
+			meta: 'Con 6 ngay',
+			code: 'STEAM10'
+		},
+		{
+			provider: 'Garena',
+			category: 'Nap game',
+			title: 'Giam 12% nap game Free Fire',
+			description: 'Ap dung tu 100K, nap qua web.',
+			tag: 'Hot',
+			meta: 'Cuoi tuan',
+			code: 'FF12'
+		},
+		{
+			provider: 'VNG',
+			category: 'Nap game',
+			title: 'Giam 15% nap game toc chien',
+			description: 'Gioi han 3 lan/nguoi, nap bang vi.',
+			tag: 'Pho bien',
+			meta: 'Den 30/04/2026',
+			code: 'TC15'
+		},
+		{
+			provider: 'Xbox Game Pass',
+			category: 'Subscription',
+			title: 'Giam 40% goi 3 thang',
+			description: 'Ap dung tai khoan moi, thanh toan the.',
+			tag: 'Hot',
+			meta: 'Con 10 ngay',
+			code: 'PASS40'
+		},
+		{
+			provider: 'PlayStation Plus',
+			category: 'Subscription',
+			title: 'Giam 30% goi Extra 12 thang',
+			description: 'Uu dai gia han, ap dung online.',
+			tag: 'New',
+			meta: 'So luong gioi han',
+			code: 'PS30'
+		},
+		{
+			provider: 'Canva Pro',
+			category: 'Nen tang so',
+			title: 'Giam 50% goi Pro 6 thang',
+			description: 'Ap dung cho team 3 tai khoan.',
+			tag: 'Hot',
+			meta: 'Online',
+			code: 'CANVA50'
+		}
+	],
+	stores: [
+		'Steam',
+		'Garena',
+		'VNG',
+		'Xbox',
+		'PlayStation',
+		'Canva',
+		'Google One'
+	],
+	steps: [
+		{ title: 'Chon dich vu', description: 'Loc theo nap game, subscription hoac cong cu so.' },
+		{ title: 'Lay ma giam gia', description: 'Nhan ma giam gia voi mot nhap chuot.' },
+		{ title: 'Ap dung khi thanh toan', description: 'Nhap ma de nhan giam gia ngay.' }
+	],
+	newsletterTitle: 'Nhan thong tin khuyen mai game',
+	newsletterLead: 'Cap nhat uu dai nap game, subscription va dich vu online moi.'
+};
+---
+
+<DealaTopic {...page} />

@@ -1,0 +1,113 @@
+---
+import DealaTopic from '../layouts/DealaTopic.astro';
+
+const page = {
+	title: 'Dich vu khac',
+	description: 'Uu dai cho cac dich vu thiet yeu: ve sinh, giao hang, giat ui, sua chua.',
+	heroEyebrow: 'Dich vu',
+	heroTitle: 'Uu dai cho cac dich vu thiet yeu khac.',
+	heroLead:
+		'Voucher ve sinh nha cua, giao hang, giat ui va dich vu gia dinh cap nhat moi ngay.',
+	searchPlaceholder: 'Nhap dich vu, nha cung cap, ma giam gia',
+	stats: [
+		{ value: '820', label: 'Ma giam gia' },
+		{ value: '170', label: 'Doi tac' },
+		{ value: '94%', label: 'Ti le thanh cong' }
+	],
+	heroCards: [
+		{
+			brand: 'JUPVIEC',
+			title: 'Giam 25% dich vu ve sinh',
+			meta: 'Ap dung lan dau',
+			tag: 'NEW',
+			code: 'JV25'
+		},
+		{
+			brand: 'AHAMOVE',
+			title: 'Giam 30K phi giao hang',
+			meta: 'Ap dung don tu 120K',
+			tag: 'HOT',
+			code: 'AHA30',
+			highlight: true
+		},
+		{
+			mini: true,
+			title: 'Giat ui',
+			meta: 'Giam 20%',
+			tag: 'Chi hom nay'
+		}
+	],
+	categories: [
+		{ name: 'Giao hang', summary: 'Shipper, giao nhanh', count: '240 uu dai' },
+		{ name: 'Ve sinh', summary: 'Ve sinh nha cua', count: '180 uu dai' },
+		{ name: 'Giat ui', summary: 'Giat say, giat hap', count: '140 uu dai' },
+		{ name: 'Sua chua', summary: 'Dien nuoc, dien may', count: '120 uu dai' }
+	],
+	deals: [
+		{
+			provider: 'Ahamove',
+			category: 'Giao hang',
+			title: 'Giam 30K phi giao hang',
+			description: 'Ap dung don tu 120K, gioi han 2 lan/ngay.',
+			tag: 'Hot',
+			meta: 'Con 5 ngay',
+			code: 'AHA30'
+		},
+		{
+			provider: 'GHTK',
+			category: 'Giao hang',
+			title: 'Giam 15% phi giao nhanh',
+			description: 'Ap dung noi thanh, thanh toan vi.',
+			tag: 'New',
+			meta: 'Ap dung online',
+			code: 'GHTK15'
+		},
+		{
+			provider: 'JupViec',
+			category: 'Ve sinh',
+			title: 'Giam 25% dich vu ve sinh',
+			description: 'Ap dung lan dau, gioi han 2 gio.',
+			tag: 'Hot',
+			meta: 'Den 30/04/2026',
+			code: 'JV25'
+		},
+		{
+			provider: 'CleanMate',
+			category: 'Ve sinh',
+			title: 'Giam 20% ve sinh van phong',
+			description: 'Ap dung dat lich theo thang.',
+			tag: 'Pho bien',
+			meta: 'Goi doanh nghiep',
+			code: 'CL20'
+		},
+		{
+			provider: 'WashGo',
+			category: 'Giat ui',
+			title: 'Giam 20% giat say',
+			description: 'Ap dung don tu 10kg, giao nhan tai nha.',
+			tag: 'New',
+			meta: 'Con 7 ngay',
+			code: 'WG20'
+		},
+		{
+			provider: 'FixNow',
+			category: 'Sua chua',
+			title: 'Giam 15% sua chua dien may',
+			description: 'Ap dung cho don tu 300K.',
+			tag: 'Pho bien',
+			meta: 'Ap dung noi thanh',
+			code: 'FIX15'
+		}
+	],
+	stores: ['Ahamove', 'GHTK', 'JupViec', 'CleanMate', 'WashGo', 'FixNow', 'GHN'],
+	steps: [
+		{ title: 'Chon dich vu', description: 'Loc theo giao hang, ve sinh, giat ui hoac sua chua.' },
+		{ title: 'Dat lich nhanh', description: 'Chon khung gio va sao chep ma giam gia.' },
+		{ title: 'Ap dung khi thanh toan', description: 'Nhap ma de nhan uu dai ngay.' }
+	],
+	newsletterTitle: 'Nhan thong tin khuyen mai dich vu',
+	newsletterLead: 'Cap nhat uu dai dich vu gia dinh va giao hang moi.'
+};
+---
+
+<DealaTopic {...page} />

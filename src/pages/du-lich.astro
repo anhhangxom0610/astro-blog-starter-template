@@ -1,0 +1,121 @@
+---
+import DealaTopic from '../layouts/DealaTopic.astro';
+
+const page = {
+	title: 'Du lich',
+	description: 'Ma giam gia ve may bay, khach san, tour va di chuyen.',
+	heroEyebrow: 'Du lich',
+	heroTitle: 'San deal du lich, ve may bay va khach san.',
+	heroLead:
+		'Uu dai chuyen bay, khach san, tour va dat xe cap nhat lien tuc theo mua.',
+	searchPlaceholder: 'Nhap hang bay, khach san, ma giam gia',
+	stats: [
+		{ value: '2.1K', label: 'Ma giam gia' },
+		{ value: '560', label: 'Doi tac' },
+		{ value: '96%', label: 'Ti le thanh cong' }
+	],
+	heroCards: [
+		{
+			brand: 'TRAVELOKA',
+			title: 'Giam 300K ve may bay',
+			meta: 'Don tu 2 trieu',
+			tag: 'NEW',
+			code: 'FLY300'
+		},
+		{
+			brand: 'AGODA',
+			title: 'Giam 35% khach san 5 sao',
+			meta: 'Ap dung cuoi tuan',
+			tag: 'HOT',
+			code: 'AGD35',
+			highlight: true
+		},
+		{
+			mini: true,
+			title: 'Tour he',
+			meta: 'Giam 15%',
+			tag: 'San dat som'
+		}
+	],
+	categories: [
+		{ name: 'Ve may bay', summary: 'Uu dai hang bay', count: '540 uu dai' },
+		{ name: 'Khach san', summary: 'Dat phong gia tot', count: '620 uu dai' },
+		{ name: 'Tour', summary: 'Tour trong nuoc', count: '380 uu dai' },
+		{ name: 'Di chuyen', summary: 'Xe khach, limousine', count: '260 uu dai' }
+	],
+	deals: [
+		{
+			provider: 'Traveloka',
+			category: 'Ve may bay',
+			title: 'Giam 300K ve may bay',
+			description: 'Ap dung don tu 2 trieu, thanh toan the.',
+			tag: 'Hot',
+			meta: 'Con 4 ngay',
+			code: 'FLY300'
+		},
+		{
+			provider: 'Vietnam Airlines',
+			category: 'Ve may bay',
+			title: 'Giam 15% ve noi dia',
+			description: 'Ap dung chuyen bay sau 22h.',
+			tag: 'New',
+			meta: 'Den 05/05/2026',
+			code: 'VNA15'
+		},
+		{
+			provider: 'Agoda',
+			category: 'Khach san',
+			title: 'Giam 35% khach san 5 sao',
+			description: 'Chon phong co bua sang, dat truoc 7 ngay.',
+			tag: 'Hot',
+			meta: 'Cuoi tuan',
+			code: 'AGD35'
+		},
+		{
+			provider: 'Booking.com',
+			category: 'Khach san',
+			title: 'Giam 25% khach san 4 sao',
+			description: 'Ap dung cho thanh vien moi.',
+			tag: 'Pho bien',
+			meta: 'Online',
+			code: 'BK25'
+		},
+		{
+			provider: 'Vietravel',
+			category: 'Tour',
+			title: 'Giam 20% tour he 2026',
+			description: 'Uu dai tour bien, gioi han 50 suat.',
+			tag: 'New',
+			meta: 'Dat truoc 30/04',
+			code: 'VR20'
+		},
+		{
+			provider: 'Vexere',
+			category: 'Di chuyen',
+			title: 'Giam 50K ve xe limousine',
+			description: 'Ap dung tu 2 ve, thanh toan online.',
+			tag: 'Hot',
+			meta: 'Con 2 ngay',
+			code: 'VX50'
+		}
+	],
+	stores: [
+		'Traveloka',
+		'Agoda',
+		'Booking.com',
+		'Vietravel',
+		'Vietnam Airlines',
+		'Vexere',
+		'Bamboo Airways'
+	],
+	steps: [
+		{ title: 'Chon hanh trinh', description: 'Loc theo chuyen bay, khach san hoac tour.' },
+		{ title: 'Lay ma giam gia', description: 'Chon deal phu hop va sao chep ma.' },
+		{ title: 'Ap dung khi dat dich vu', description: 'Nhap ma khi thanh toan de nhan giam gia.' }
+	],
+	newsletterTitle: 'Nhan thong tin khuyen mai du lich',
+	newsletterLead: 'Cap nhat uu dai ve may bay, khach san va tour moi nhat.'
+};
+---
+
+<DealaTopic {...page} />

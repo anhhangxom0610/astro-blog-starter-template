@@ -1,0 +1,113 @@
+---
+import DealaTopic from '../layouts/DealaTopic.astro';
+
+const page = {
+	title: 'Giai tri / Phim anh / Ca nhac',
+	description: 'Tong hop uu dai ve rap phim, nen tang nhac so va giai tri truc tuyen.',
+	heroEyebrow: 'Giai tri',
+	heroTitle: 'San deal phim anh va ca nhac.',
+	heroLead:
+		'Voucher ve rap, goi xem phim truc tuyen va khuyen mai nhac so cap nhat moi ngay.',
+	searchPlaceholder: 'Nhap rap phim, nen tang, ma giam gia',
+	stats: [
+		{ value: '980', label: 'Ma giam gia' },
+		{ value: '120', label: 'Doi tac' },
+		{ value: '97%', label: 'Ti le thanh cong' }
+	],
+	heroCards: [
+		{
+			brand: 'CGV',
+			title: 'Giam 35% ve xem phim thu 4',
+			meta: 'Ap dung sau 18h',
+			tag: 'NEW',
+			code: 'CGV35'
+		},
+		{
+			brand: 'SPOTIFY',
+			title: 'Giam 50% goi Premium 2 thang',
+			meta: 'Tai khoan moi',
+			tag: 'HOT',
+			code: 'SPOT50',
+			highlight: true
+		},
+		{
+			mini: true,
+			title: 'Goi xem phim',
+			meta: 'Giam 20%',
+			tag: 'Chi hom nay'
+		}
+	],
+	categories: [
+		{ name: 'Ve rap', summary: 'Rap phim toan quoc', count: '260 uu dai' },
+		{ name: 'Nen tang phim', summary: 'Xem phim tai nha', count: '210 uu dai' },
+		{ name: 'Nhac so', summary: 'Subscription nhac', count: '180 uu dai' },
+		{ name: 'Su kien', summary: 'Live show, concert', count: '140 uu dai' }
+	],
+	deals: [
+		{
+			provider: 'CGV',
+			category: 'Ve rap',
+			title: 'Giam 35% ve xem phim thu 4',
+			description: 'Ap dung sau 18h, mua ve qua app.',
+			tag: 'Hot',
+			meta: 'Con 5 ngay',
+			code: 'CGV35'
+		},
+		{
+			provider: 'Galaxy Cinema',
+			category: 'Ve rap',
+			title: 'Combo bap nuoc giam 30K',
+			description: 'Ap dung cho ve 2D bat ky.',
+			tag: 'New',
+			meta: 'Chi cuoi tuan',
+			code: 'GLX30'
+		},
+		{
+			provider: 'Lotte Cinema',
+			category: 'Ve rap',
+			title: 'Mua 1 ve tang 1 ve thu 2',
+			description: 'Gioi han ghe thuong, ap dung thu 3.',
+			tag: 'Hot',
+			meta: 'Den 28/04/2026',
+			code: 'LOTTE11'
+		},
+		{
+			provider: 'FPT Play',
+			category: 'Nen tang phim',
+			title: 'Giam 25% goi VIP 6 thang',
+			description: 'Xem doc quyen phim chieu rap.',
+			tag: 'Pho bien',
+			meta: 'Online',
+			code: 'FPT25'
+		},
+		{
+			provider: 'Spotify',
+			category: 'Nhac so',
+			title: 'Giam 50% goi Premium 2 thang',
+			description: 'Ap dung tai khoan moi, thanh toan the.',
+			tag: 'Hot',
+			meta: 'Con 7 ngay',
+			code: 'SPOT50'
+		},
+		{
+			provider: 'VieON',
+			category: 'Nen tang phim',
+			title: 'Giam 20% goi VIP 3 thang',
+			description: 'Tang them 1 thang khi gia han.',
+			tag: 'New',
+			meta: 'Ap dung online',
+			code: 'VIE20'
+		}
+	],
+	stores: ['CGV', 'Galaxy Cinema', 'Lotte Cinema', 'FPT Play', 'VieON', 'Spotify', 'Apple Music'],
+	steps: [
+		{ title: 'Chon loai hinh giai tri', description: 'Loc theo ve rap, phim truc tuyen hoac nhac so.' },
+		{ title: 'Lay ma giam gia', description: 'Nhan ma giam gia chi voi mot nhap chuot.' },
+		{ title: 'Ap dung khi thanh toan', description: 'Nhap ma de giam gia ngay tai trang thanh toan.' }
+	],
+	newsletterTitle: 'Nhan thong tin khuyen mai giai tri',
+	newsletterLead: 'Cap nhat uu dai ve rap, nhac so va phim truc tuyen moi nhat.'
+};
+---
+
+<DealaTopic {...page} />
